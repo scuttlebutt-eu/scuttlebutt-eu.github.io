@@ -29,7 +29,7 @@
     header {
       display: grid;
       grid-template-rows: [top] auto [bottom];
-      grid-template-columns: repeat(3, max-content);
+      grid-template-columns: repeat(4, max-content);
       grid-gap: 30px;
     }
     header > a {
@@ -40,10 +40,6 @@
     article > h1:first-of-type {
       font-size: 2.5rem;
       color: darkred;
-    }
-    article > p:first-of-type {
-      margin-left: calc(40% - 30px);
-      margin-right: 5%;
     }
     .rect0 {
       background-color: darkviolet;
@@ -86,17 +82,25 @@
   <body>
     <article>
       <header>
+        <a href="/">Home</a>
         <a href="/">Membership</a>
         <a href="/">Code of Conduct</a>
         <a href="/">Contact</a>
       </header>
-      <h1>European Scuttlebutt Collective</h1>
+      <style>
+  article > p:first-of-type {
+    margin-left: calc(40% - 30px);
+    margin-right: 5%;
+  }
+</style>
+<h1>European Scuttlebutt Collective</h1>
 <div class="rect0"></div>
 <p>Scuttlebutt can be transformative for society, decentralizing and enabling local community development free of big corp. It is a fast growing decentralized social network. As an alternative to the large corporate social networks, it enables autonomy for the users and a free zone from big data harvesting...</p>
 <div>
     <div class="rect1"></div>
 </div>
 
+```
       <footer>
         <div class="circle"></div>
         <div class="square"></div>
