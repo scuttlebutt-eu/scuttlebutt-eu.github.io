@@ -4,8 +4,8 @@
   "description": "Website for the European Scuttlebutt Collective",
   "main": "index.js",
   "scripts": {
-    "livedev": "eleventy --serve --output=docs",
-    "build": "eleventy --output=docs"
+    "livedev": "eleventy --serve",
+    "build": "eleventy"
   },
   "author": "European Scuttlebutt Collective",
   "license": "AGPL-3.0-only",
