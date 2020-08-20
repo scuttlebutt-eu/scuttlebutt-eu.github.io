@@ -1,6 +1,6 @@
 ---
-layout: layout.pug
-title: My Rad Markdown Blog Post
+layout: basic.njk
+title: Homepage
 ---
 # EUSSBC
 
