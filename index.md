@@ -1,3 +1,7 @@
+---
+layout: layout.pug
+title: My Rad Markdown Blog Post
+---
 # EUSSBC
 
 # European Scuttlebutt Collective
