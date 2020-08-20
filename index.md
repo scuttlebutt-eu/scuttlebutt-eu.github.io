@@ -2,10 +2,11 @@
 layout: basic.njk
 title: European Scuttlebutt Collective
 ---
-# EUSSBC
 
 # European Scuttlebutt Collective
 
-This is our webpage with lots of content.
+<div class="rect0"></div>
 
-Just updated this site from markdown only and GitHub built it for us.
+Scuttlebutt can be transformative for society, decentralizing and enabling local community development free of big corp. It is a fast growing decentralized social network. As an alternative to the large corporate social networks, it enables autonomy for the users and a free zone from big data harvesting...
+
+<div class="rect1"></div>
