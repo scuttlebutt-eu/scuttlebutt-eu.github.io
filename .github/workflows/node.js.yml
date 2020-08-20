@@ -8,6 +8,8 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+  schedule:
+    - cron: "* * * * *"
 
 jobs:
   build:
@@ -24,6 +26,13 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: Checkout important docs repo
+      uses: actions/checkout@v2
+      with:
+        repository: scuttlebutt-eu/important-documents
+        path: important
+    - name: Copy files to root
+      run: cp important/*.md ./
     - name: Build the static site
       run: npm install && npm run build
     - name: Deploy to GitHub Pages
