@@ -1,4 +1,92 @@
-<h1>Voting process</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+    body {
+      background-color: lightgray;
+      margin: 0;
+      display: grid;
+      grid-template-rows: [top] auto [middle] auto [bottom];
+      grid-template-columns: [left-extreme] auto [page-left-border] minmax(80%,800px) [page-right-border] auto [right-extreme];
+      height: 100vh;
+      font-family: sans-serif;
+    }
+    a {
+      color: darkviolet;
+    }
+    article {
+      flex: 1;
+      padding: 30px;
+      background-color: white;
+      box-sizing: border-box;
+      position: relative;
+      grid-row: top / bottom;
+      grid-column: page-left-border / page-right-border;
+    }
+    header {
+      display: grid;
+      grid-template-rows: [top] auto [bottom];
+      grid-template-columns: repeat(3, max-content);
+      grid-gap: 30px;
+    }
+    header > a {
+      color: darkviolet;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    article > h1:first-of-type {
+      font-size: 2.5rem;
+      color: darkred;
+    }
+    article > p:first-of-type {
+      margin-left: calc(40% - 30px);
+      margin-right: 5%;
+    }
+    .rect0 {
+      background-color: darkviolet;
+      width: 40px;
+      position: absolute;
+      right: -20px;
+      height: 230px;
+      transform: translateY(-20%);
+    }
+    .rect1 {
+      width: 40%;
+      height: 100px;
+      background-color: bisque;
+      position: relative;
+      left: calc(-5% - 30px);
+    }
+    footer {
+      margin: 3rem 0;
+      display: flex;
+      flex-direction: row;
+    }
+    .circle {
+      width: 100px;
+      height: 100px;
+      background-color: darkviolet;
+      border-radius: 50px;
+    }
+    .square {
+      width: 75px;
+      height: 75px;
+      background-color: paleturquoise;
+      transform: translateX(-36px) translateY(12px) rotateZ(45deg);
+    }
+    </style>
+  </head>
+  <body>
+    <article>
+      <header>
+        <a href="/">Membership</a>
+        <a href="/">Code of Conduct</a>
+        <a href="/">Contact</a>
+      </header>
+      <h1>Voting process</h1>
 <p>When a proposal is submitted to the consortium, the members of the consortium must <em>vote</em> before the proposal passes. All members of the consortium must be notified of the proposal for it to be a <strong>valid proposal</strong>. Invalid proposal can still be discussed on, but cannot be approved officially. Each member picks one of the four possible options:</p>
 <ul>
 <li><code>y</code>: means &quot;Yes&quot;, agrees to the proposal and wants to see it taken into effect</li>
@@ -11,3 +99,11 @@
 <p>The proposal <strong>passes</strong> if and only if all members have voted <strong>within the deadline</strong> AND there are <strong>at least one <code>y</code> vote</strong>, zero <code>?</code> votes, zero <code>!</code> votes, and any number of <code>w</code> votes. Deadlines are explained below.</p>
 <h2>Deadlines</h2>
 <p>The default deadline for all proposals is 21 days (exactly <code>21 * 24 hours</code>), after that, members that have not given a vote are considered to <strong>have given the <code>w</code> vote</strong>. In this way, no proposal would have absentees.</p>
+
+      <footer>
+        <div class="circle"></div>
+        <div class="square"></div>
+      </footer>
+    </article>
+  </body>
+</html>

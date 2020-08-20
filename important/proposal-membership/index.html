@@ -1,4 +1,92 @@
-<h1>Membership</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+    body {
+      background-color: lightgray;
+      margin: 0;
+      display: grid;
+      grid-template-rows: [top] auto [middle] auto [bottom];
+      grid-template-columns: [left-extreme] auto [page-left-border] minmax(80%,800px) [page-right-border] auto [right-extreme];
+      height: 100vh;
+      font-family: sans-serif;
+    }
+    a {
+      color: darkviolet;
+    }
+    article {
+      flex: 1;
+      padding: 30px;
+      background-color: white;
+      box-sizing: border-box;
+      position: relative;
+      grid-row: top / bottom;
+      grid-column: page-left-border / page-right-border;
+    }
+    header {
+      display: grid;
+      grid-template-rows: [top] auto [bottom];
+      grid-template-columns: repeat(3, max-content);
+      grid-gap: 30px;
+    }
+    header > a {
+      color: darkviolet;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    article > h1:first-of-type {
+      font-size: 2.5rem;
+      color: darkred;
+    }
+    article > p:first-of-type {
+      margin-left: calc(40% - 30px);
+      margin-right: 5%;
+    }
+    .rect0 {
+      background-color: darkviolet;
+      width: 40px;
+      position: absolute;
+      right: -20px;
+      height: 230px;
+      transform: translateY(-20%);
+    }
+    .rect1 {
+      width: 40%;
+      height: 100px;
+      background-color: bisque;
+      position: relative;
+      left: calc(-5% - 30px);
+    }
+    footer {
+      margin: 3rem 0;
+      display: flex;
+      flex-direction: row;
+    }
+    .circle {
+      width: 100px;
+      height: 100px;
+      background-color: darkviolet;
+      border-radius: 50px;
+    }
+    .square {
+      width: 75px;
+      height: 75px;
+      background-color: paleturquoise;
+      transform: translateX(-36px) translateY(12px) rotateZ(45deg);
+    }
+    </style>
+  </head>
+  <body>
+    <article>
+      <header>
+        <a href="/">Membership</a>
+        <a href="/">Code of Conduct</a>
+        <a href="/">Contact</a>
+      </header>
+      <h1>Membership</h1>
 <p><strong>Membership Principles</strong></p>
 <ol>
 <li><strong>Financial stake</strong>: The consortium wishes that each member recurrently contributes financially to the consortium, with the goal of covering costs for collective purposes, such as meetups and others. The contribution amount from each member should be flexible to their financial situation, but we suggest a default contribution amount as a baseline.</li>
@@ -38,3 +126,11 @@
 </ol>
 <h2>Modifying the Membership (this document)</h2>
 <p>The '(Y)es/(W)hatever/(?)Clarification/(!)Alternative Suggestion' decision process, explained in the <a href="./voting-process.md">Voting Process</a> document, is used to make modifications or complete rewrites of this document.</p>
+
+      <footer>
+        <div class="circle"></div>
+        <div class="square"></div>
+      </footer>
+    </article>
+  </body>
+</html>
