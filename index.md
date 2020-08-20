@@ -2,6 +2,6 @@
 
 # European Scuttlebutt Collective
 
-POWERSOURCE+STALTZ+CBLGH
-
 This is our webpage with lots of content.
+
+Just updated this site from markdown only and GitHub built it for us.
