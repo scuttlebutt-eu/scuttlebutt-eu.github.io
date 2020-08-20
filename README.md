@@ -1,5 +1,11 @@
-# EUSSBC
+# Website for the European Scuttlebutt Collective
 
-# European Scuttlebutt Collective
+Using Eleventy for generating a static website.
 
-This is our webpage with lots of content.
+```
+npm install
+```
+
+```
+npm run build
+```
