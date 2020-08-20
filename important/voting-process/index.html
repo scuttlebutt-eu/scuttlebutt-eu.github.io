@@ -1,0 +1,13 @@
+<h1>Voting process</h1>
+<p>When a proposal is submitted to the consortium, the members of the consortium must <em>vote</em> before the proposal passes. All members of the consortium must be notified of the proposal for it to be a <strong>valid proposal</strong>. Invalid proposal can still be discussed on, but cannot be approved officially. Each member picks one of the four possible options:</p>
+<ul>
+<li><code>y</code>: means &quot;Yes&quot;, agrees to the proposal and wants to see it taken into effect</li>
+<li><code>w</code>: means &quot;Whatever&quot;, does not have an opinion about the proposal and does not want their voice to be counted</li>
+<li><code>?</code>: means &quot;Question&quot;, when the member needs clarification about the proposal before voting on it</li>
+<li><code>!</code>: means &quot;Alternative suggestion&quot;, when the member has a counter-proposal to the current proposal</li>
+</ul>
+<p>As soon as there is any <code>!</code> vote, the current proposal is put on hold, and the counter-proposal in the <code>!</code> vote should be listened to, and voted on like any other proposal. All proposals have the same voting process, so that it's possible to have a chain of <code>!</code>, and along this chain, the original proposal is refined until everyone is satisfied. Or, a discussion takes place until there is no resolution (none of the proposals along the chain pass), indicating an impasse. If there are multiple <code>!</code> votes for the same decision, the first <code>!</code> counter-proposal should be listened to and the other counter-proposals are disregarded, but can be resubmitted as <code>!</code> on the subsequent proposal.</p>
+<p>Votes of type <code>?</code> don't cancel the current proposal, they just ask for clarification from the member who proposed it. After the clarification is given, <strong>all</strong> members vote again for the same proposal.</p>
+<p>The proposal <strong>passes</strong> if and only if all members have voted <strong>within the deadline</strong> AND there are <strong>at least one <code>y</code> vote</strong>, zero <code>?</code> votes, zero <code>!</code> votes, and any number of <code>w</code> votes. Deadlines are explained below.</p>
+<h2>Deadlines</h2>
+<p>The default deadline for all proposals is 21 days (exactly <code>21 * 24 hours</code>), after that, members that have not given a vote are considered to <strong>have given the <code>w</code> vote</strong>. In this way, no proposal would have absentees.</p>
