@@ -1,0 +1,15 @@
+{
+  "name": "eussbc",
+  "version": "1.0.0",
+  "description": "Website for the European Scuttlebutt Collective",
+  "main": "index.js",
+  "scripts": {
+    "livedev": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "author": "European Scuttlebutt Collective",
+  "license": "AGPL-3.0-only",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}
