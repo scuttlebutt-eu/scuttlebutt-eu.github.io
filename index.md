@@ -1,5 +1,5 @@
 ---
-layout: basic.njk
+layout: home.njk
 title: European Scuttlebutt Collective
 ---
 
