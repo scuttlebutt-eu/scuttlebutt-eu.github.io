@@ -1,6 +1,6 @@
 ---
 layout: basic.njk
-title: Homepage
+title: European Scuttlebutt Collective
 ---
 # EUSSBC
 
