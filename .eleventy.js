@@ -1,7 +1,7 @@
-module.exports = function(eleventyConfig) {
-    eleventyConfig.setTemplateFormats([
+module.exports = function(eleventy) {
+    eleventy.addPassthroughCopy('./assets');
+    eleventy.setTemplateFormats([
         "md",
-        "njk",
-        "svg",
+        "njk"
     ]);
   };
