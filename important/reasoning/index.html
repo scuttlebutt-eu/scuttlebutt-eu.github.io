@@ -48,20 +48,17 @@
       font-size: 2.5rem;
       color: darkred;
     }
+    article > h1, article > h2, article > h3, article > p {
+      position: relative;
+      z-index: 2;
+    }
     .rect0 {
       background-color: darkviolet;
       width: 40px;
       position: absolute;
       right: -20px;
       height: 230px;
-      transform: translateY(-20%);
-    }
-    .rect1 {
-      width: 40%;
-      height: 100px;
-      background-color: bisque;
-      position: relative;
-      left: calc(-5% - 30px);
+      top: 9rem;
     }
     footer {
       margin: 3rem 0;
@@ -82,8 +79,11 @@
       transform: translateX(-36px) translateY(0px) rotateZ(45deg);
     }
     .lines0 {
-      margin-left: auto;
       height: 9rem;
+      position: absolute;
+      right: 2rem;
+      top: 32rem;
+      z-index: 1;
     }
     </style>
   </head>
@@ -95,6 +95,8 @@
         <a href="/">Code of Conduct</a>
         <a href="/">Contact</a>
       </header>
+      <div class="rect0"></div>
+      <img class="lines0" src="/assets/rect-star.svg"></img>
       <h1>Reasoning Behind the European SSB Collective's Rules</h1>
 <p>In order to function as an organization, we need some rules that lay the foundation for how we work. In our experience on Scuttlebutt, we've learned that a central question about making decisions is <em>who gets to have a say</em>. On Scuttlebutt, this is very difficult to answer, because &quot;the community&quot; is an amorphos blob, so there is no such thing as a clear consensus.</p>
 <p>To resolve that question in the consortium, we introduce membership. Only members can shape the consortium through its decision-making process. But what does it mean to be a member, and what and who decides whether one becomes a member?</p>
@@ -121,7 +123,6 @@
       <footer>
         <div class="circle"></div>
         <div class="square"></div>
-        <img class="lines0" src="/assets/rect-star.svg"></img>
       </footer>
     </article>
   </body>
