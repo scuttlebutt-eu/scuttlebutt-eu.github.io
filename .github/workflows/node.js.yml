@@ -26,13 +26,19 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Checkout important docs repo
+    - name: Checkout important-documents repo
       uses: actions/checkout@v2
       with:
         repository: scuttlebutt-eu/important-documents
-        path: important
-    - name: Copy files to root
-      run: cp important/*.md ./
+        path: important-documents
+    - name: Prepend front matter to all important-documents markdown files
+      run: |
+        for file in important-documents/*
+        do
+          sed -i.old '1s;^;---\ntags:\n  - important-documents\n---\n\n;' $file
+        done
+    - name: Copy important-documents markdown files to root
+      run: cp important-documents/*.md ./
     - name: Build the static site
       run: npm install && npm run build
     - name: Deploy to GitHub Pages

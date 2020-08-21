@@ -93,7 +93,11 @@
       <footer>
         <div class="circle"></div>
         <div class="square"></div>
-        <img class="lines0" src="/assets/rect-star.svg"></img>
+      {% if tags and tags.includes('important-documents') %}
+        <a style="color:gray" href="{{ 'https://github.com/scuttlebutt-eu/important-documents/edit/master' + page.filePathStem + '.md' }}">Edit this page on GitHub</a>
+      {% else %}
+        <a style="color:gray" href="{{ 'https://github.com/scuttlebutt-eu/scuttlebutt-eu.github.io/edit/master' + page.filePathStem + '.md' }}">Edit this page on GitHub</a>
+      {% endif %}
       </footer>
     </article>
   </body>
