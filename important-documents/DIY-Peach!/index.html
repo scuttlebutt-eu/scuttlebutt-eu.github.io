@@ -6,6 +6,9 @@
     <title></title>
     <link href="/assets/fonts/inter.css" href="stylesheet">
     <style>
+    :root {
+        --purple: #7325FC;
+    }
     body {
       background-color: lightgray;
       margin: 0;
@@ -17,7 +20,7 @@
       line-height: 1.4;
     }
     a {
-      color: darkviolet;
+      color: var(--purple);
     }
     li, p {
       max-width: 600px;
@@ -26,7 +29,7 @@
     }
     article {
       flex: 1;
-      padding: 30px;
+      padding: 2rem 4rem;
       background-color: white;
       box-sizing: border-box;
       position: relative;
@@ -40,7 +43,7 @@
       grid-gap: 30px;
     }
     header > a {
-      color: darkviolet;
+      color: var(--purple);
       font-weight: bold;
       text-decoration: none;
     }
@@ -48,16 +51,16 @@
       font-size: 2.5rem;
       color: darkred;
     }
-    article > h1, article > h2, article > h3, article > p {
+    article > h1, article > h2, article > h3, article > p, article > ol, article > ul {
       position: relative;
       z-index: 2;
     }
     .rect0 {
-      background-color: darkviolet;
-      width: 40px;
+      background-color: var(--purple);
+      width: 21px;
       position: absolute;
-      right: -20px;
-      height: 230px;
+      right: -11px;
+      height: 240px;
       top: 9rem;
     }
     footer {
@@ -69,7 +72,7 @@
     .circle {
       width: 100px;
       height: 100px;
-      background-color: darkviolet;
+      background-color: var(--purple);
       border-radius: 50px;
     }
     .square {
@@ -84,6 +87,7 @@
       right: 2rem;
       top: 32rem;
       z-index: 1;
+      opacity: 0.4;
     }
     </style>
   </head>
