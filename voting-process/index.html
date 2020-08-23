@@ -32,10 +32,13 @@
     }
     li, p {
       max-width: 600px;
+    }
+    li {
       margin-left: 1rem;
     }
     article {
       flex: 1;
+      min-height: 100vh;
       padding: 2rem 6rem;
       background-color: white;
       box-sizing: border-box;
@@ -98,6 +101,13 @@
     @media only screen and (max-device-width : 667px) {
       article {
         padding: 2rem 2rem;
+      }
+      header {
+        grid-gap: 0.25rem;
+        grid-template-columns: auto auto;
+      }
+      .rect0 {
+        right: 0;
       }
     }
     </style>
