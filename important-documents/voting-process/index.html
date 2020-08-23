@@ -8,33 +8,38 @@
     <style>
     :root {
         --purple: #7325FC;
+        --red: #D13D4C;
+        --off-white: #f2f2f2;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    article > * {
+      margin-bottom: 2rem;
     }
     body {
-      background-color: lightgray;
-      margin: 0;
-      display: grid;
-      grid-template-rows: [top] auto [middle] auto [bottom];
-      grid-template-columns: [left-extreme] auto [page-left-border] minmax(60%,800px) [page-right-border] auto [right-extreme];
+      background-color: var(--off-white);
       height: 100vh;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
       font-family: Inter, sans-serif;
-      line-height: 1.4;
+      line-height: 1.5;
     }
     a {
       color: var(--purple);
     }
     li, p {
       max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: 1rem;
     }
     article {
       flex: 1;
-      padding: 2rem 4rem;
+      padding: 2rem 6rem;
       background-color: white;
       box-sizing: border-box;
       position: relative;
-      grid-row: top / bottom;
-      grid-column: page-left-border / page-right-border;
     }
     header {
       display: grid;
@@ -48,8 +53,8 @@
       text-decoration: none;
     }
     article > h1:first-of-type {
-      font-size: 2.5rem;
-      color: darkred;
+      font-size: 2rem;
+      color: var(--red);
     }
     article > h1, article > h2, article > h3, article > p, article > ol, article > ul {
       position: relative;
@@ -88,6 +93,12 @@
       top: 32rem;
       z-index: 1;
       opacity: 0.4;
+    }
+    /* reduce article padding for phones
+    @media only screen and (max-device-width : 667px) {
+      article {
+        padding: 2rem 2rem;
+      }
     }
     </style>
   </head>
