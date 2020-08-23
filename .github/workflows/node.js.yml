@@ -41,6 +41,8 @@ jobs:
       run: cp important-documents/*.md ./
     - name: Build the static site
       run: npm install && npm run build
+    - name: Set the CNAME redirect
+      run: echo "scuttlebutt.eu" > ./CNAME
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
