@@ -38,7 +38,7 @@ jobs:
           sed -i.old '1s;^;---\ntags:\n  - important-documents\n---\n\n;' $file
         done
     - name: Rewrite links in important-documents markdown files
-      run: find important-documents -type f -name "*.md" | xargs -n1 sed -i "s|./\(.*\).md|\1|g" 
+      run: find important-documents -type f -name "*.md" | xargs -n1 sed -i "s|\.\(/.*\).md|\1|g"
     - name: Copy important-documents markdown files to root
       run: cp important-documents/*.md ./
     - name: Build the static site
