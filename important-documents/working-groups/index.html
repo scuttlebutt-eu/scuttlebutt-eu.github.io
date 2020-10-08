@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="/assets/fonts/inter.css" href="stylesheet">
+    <style>
+    :root {
+        --purple: #7325FC;
+        --red: #D13D4C;
+        --off-white: #f2f2f2;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    article > * {
+      margin-bottom: 2rem;
+    }
+    body {
+      background-color: var(--off-white);
+      height: 100vh;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: Inter, sans-serif;
+      line-height: 1.5;
+      overflow-y: scroll;
+    }
+    a {
+      color: var(--purple);
+    }
+    li, p {
+      max-width: 600px;
+    }
+    li {
+      margin-left: 1rem;
+    }
+    article {
+      flex: 1;
+      min-height: 100vh;
+      padding: 2rem 6rem;
+      background-color: white;
+      box-sizing: border-box;
+      position: relative;
+    }
+    header {
+      display: grid;
+      grid-template-rows: [top] auto [bottom];
+      grid-template-columns: repeat(4, max-content);
+      grid-gap: 30px;
+    }
+    header > a {
+      color: var(--purple);
+      font-weight: bold;
+      text-decoration: none;
+    }
+    article > h1:first-of-type {
+      font-size: 2rem;
+      color: var(--red);
+    }
+    article > h1, article > h2, article > h3, article > p, article > ol, article > ul {
+      position: relative;
+      z-index: 2;
+    }
+    .rect0 {
+      background-color: var(--purple);
+      width: 21px;
+      position: absolute;
+      right: -11px;
+      height: 240px;
+      top: 9rem;
+    }
+    footer {
+      margin: 3rem 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .circle {
+      width: 100px;
+      height: 100px;
+      background-color: var(--purple);
+      border-radius: 50px;
+    }
+    .square {
+      width: 75px;
+      height: 75px;
+      background-color: paleturquoise;
+      transform: translateX(-36px) translateY(0px) rotateZ(45deg);
+    }
+    .lines0 {
+      height: 9rem;
+      position: absolute;
+      right: 2rem;
+      top: 32rem;
+      z-index: 1;
+      opacity: 0.4;
+    }
+    /* reduce article padding for phones */
+    @media only screen and (max-device-width : 667px) {
+      article {
+        padding: 2rem 2rem;
+      }
+      header {
+        grid-gap: 0.25rem;
+        grid-template-columns: auto auto;
+      }
+      .rect0 {
+        right: 0;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <article>
+      <header>
+        <a href="/">Home</a>
+        <a href="/membership/">Membership</a>
+        <a href="/documents">Documents</a>
+        <a href="https://github.com/orgs/scuttlebutt-eu/people">Contact</a>
+      </header>
+      <div class="rect0"></div>
+      <img class="lines0" src="/assets/rect-star.svg"></img>
+      <h1>Working groups</h1>
+<p>This listing collates information about active working groups, formed under the <a href="/DIY-Peach!">DIY Peach!</a> guidelines.</p>
+<h2>Active Working Groups</h2>
+<h3>NGI Pointer Peach</h3>
+<p><strong>Purpose</strong>: Communicate in a transparent manner regarding the NGI Pointer grant.</p>
+<p><strong>Confirmed Members</strong>:</p>
+<ul>
+<li>Anders</li>
+<li>Zenna</li>
+<li>Staltz</li>
+</ul>
+<h3>Grants Peach</h3>
+<p><strong>Purpose</strong>: Grant writing and grant scouting.</p>
+<p><strong>Confirmed members</strong>:</p>
+<ul>
+<li>Staltz</li>
+<li>Erick</li>
+<li>keks</li>
+</ul>
+<h3>Academic Peach</h3>
+<p><strong>Purpose:</strong> Write papers about SSB, review each other's drafts, apply for academic funding.</p>
+<p><strong>Confirmed Members</strong>:</p>
+<ul>
+<li>Erick</li>
+<li>Daan</li>
+<li>keks</li>
+</ul>
+<h3>Diet SSB Peach</h3>
+<p><strong>Purpose:</strong> Make SSB something that doesn't require a beefy machine. Target
+low-end smartphones, ARM notebooks (e.g. <a href="https://mntre.com">MNT Reform</a>), <a href="https://www.bunniestudios.com/blog/?p=5921">Precursor</a>,
+microcontrollers, etc.</p>
+<p><strong>Confirmed members</strong>:</p>
+<ul>
+<li>SoapDog</li>
+<li>Daan</li>
+<li>Staltz</li>
+</ul>
+<h3>The Bun Depot</h3>
+<p><strong>Purpose:</strong> Pushing clients forward, taking on incoming
+<a href="https://dna.crisp.se/docs/bun-protocol.html">buns</a> of various sizes wrt
+freelancing. The focus is funding-backed ecosystem work.</p>
+<p><strong>Confirmed members:</strong></p>
+<ul>
+<li>SoapDog</li>
+<li>cblgh</li>
+<li>Jacob</li>
+<li>arj (as occasional support for the other members)</li>
+</ul>
+<h3>Social Hang Out Peach</h3>
+<p><strong>Purpose:</strong> Low-key, low-frequency social hang-out</p>
+<p><strong>Confirmed members:</strong></p>
+<ul>
+<li>keks</li>
+<li>cblgh</li>
+<li>Jacob</li>
+</ul>
+<h2>Proposed Working Groups</h2>
+<p>Working groups that were proposed, but not created due to currently lacking enough interested members.</p>
+<h3>Money Peach</h3>
+<p><strong>Purpose</strong>: Defining how we handle money, receive membership fees, manage transfers, and report on budget</p>
+<p><strong>Contact person</strong>: Erick</p>
+<h3>Crypto Peach</h3>
+<p><strong>Purpose</strong>: Support for cryptographic related issues.</p>
+<p><strong>Contact person</strong>: keks</p>
+<h3>Orchard peach:</h3>
+<p><strong>Purpose:</strong> a small lighthearted peach to great SSB toys and proof-of-concepts in different stacks/languages.</p>
+<p><strong>Contact person:</strong> SoapDog</p>
+<h3>Stack Knowledge Sharing Peach:</h3>
+<p><strong>Purpose:</strong> Pair programming or someone holds a workshop &amp; others can attend; c.f. arj + mixmix knowledge sharing</p>
+<p><strong>Interested people:</strong></p>
+<ul>
+<li>cblgh</li>
+<li>Jacob</li>
+</ul>
+<h2>Past Working Groups</h2>
+<p>Working groups that were active in the past but were decided to be dismantled, or their purpose was fulfilled.</p>
+<p><em>We don't have any of these yet, but are likely to in the future</em></p>
+
+      <footer>
+        <div class="circle"></div>
+        <div class="square"></div>
+      
+        <a style="color:gray" href="https://github.com/scuttlebutt-eu/important-documents/edit/master/important-documents/working-groups.md">Edit this page on GitHub</a>
+      
+      </footer>
+    </article>
+  </body>
+</html>
